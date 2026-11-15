@@ -30,7 +30,7 @@ function IndividualPostPage() {
       .then(res => {
         setUser(res.data);
 
-        return axios.get("https://jsonplaceholder.typicode.com/users/" + params.id+ "/comments"); 
+        return axios.get("https://jsonplaceholder.typicode.com/posts/" + params.id+ "/comments"); 
       })
       .then(res => {
         const formattedComments = res.data.map(comment=>({
