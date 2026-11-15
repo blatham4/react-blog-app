@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.site-header {
+  background-color: #263b5e;
+  color: white;
+  padding: 20px 30px;
+}
+
+.header-content {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.site-header h1 {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.page-container {
+  max-width: 800px;
+  margin: 35px auto;
+  padding: 0 20px;
+}
+
+.blog-post,
+.comments-section {
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.post-label {
+  color: #526b91;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.blog-post h2 {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.post-info {
+  color: #777;
+  font-size: 14px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+}
+
+.post-content {
+  margin: 25px 0;
+}
+
+button {
+  background-color: #263b5e;
+  color: white;
+  border: none;
+  padding: 11px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:hover {
+  background-color: #3d5b89;
+}
+
+.like-button {
+  background-color: #8b3650;
+}
+
+.like-button:hover {
+  background-color: #a44762;
+}
+
+.comments-section h2 {
+  font-size: 22px;
+  margin-top: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.comment {
+  background-color: #f4f6f9;
+  border-left: 4px solid #526b91;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 5px;
+}
+
+.comment h3 {
+  margin: 0 0 5px;
+  font-size: 16px;
+}
+
+.comment p {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.site-footer {
+  background-color: #263b5e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.site-footer p {
+  margin: 5px;
+}
+
+@media (max-width: 600px) {
+  .header-content {
+    flex-direction: column;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .page-container {
+    margin: 20px auto;
+    padding: 0 12px;
+  }
+
+  .blog-post,
+  .comments-section {
+    padding: 20px;
+  }
+
+  .blog-post h2 {
+    font-size: 25px;
+  }
+}
